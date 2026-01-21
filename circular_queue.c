@@ -69,7 +69,7 @@ int main() {
 
     display();
 
-    enqueue(67);   // works correctly now
+    enqueue(67);   
     display();
 
     return 0;

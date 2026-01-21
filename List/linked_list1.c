@@ -9,15 +9,15 @@ struct node1
 
 int main()
 {
-    struct node1 *head = malloc(sizeof(struct node1));
-    head->a = 45;
+    struct node1 *head = malloc(sizeof(struct node1)); //creating head node
+    head->a = 45;         
     head->link = NULL;
    printf("%d\n", head->a);
 
-    struct node1 *head1 = malloc(sizeof(struct node1));
-    head1->a=60;
-    head1->link=NULL;
-    head->link=head1;
+    struct node1 *head1 = malloc(sizeof(struct node1));  //creating head1 node
+    head1->a=60;                                         //assigning value to head1 node
+    head1->link=NULL;                                    //assigning NULL to link of head1 node
+    head->link=head1;                                    //linking head1 to head
     printf("%d\n", head1->a);
 
      struct node1 *head2 = malloc(sizeof(struct node1));
